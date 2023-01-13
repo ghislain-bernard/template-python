@@ -1,0 +1,12 @@
+.gitignore
+.editorconfig
+.env
+.mypy.ini
+.pylintrc
+.python-version
+.style.yapf
+template.py
+Makefile
+test/test_template.py
+README.md
+.files.txt
