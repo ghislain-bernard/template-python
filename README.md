@@ -6,7 +6,7 @@
 
 ```console
 $ python3 template.py
-template@0.0.1
+template@0.0.2
 
 $ python3 -m unittest discover --start-directory=test --verbose
 test_project (test_template.TestTemplate) ... ok
