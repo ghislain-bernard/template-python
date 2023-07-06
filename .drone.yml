@@ -3,14 +3,14 @@ type: docker
 
 steps:
   - name: test
-    image: python:3.10.10-alpine
+    image: python:3.11.4-alpine
     commands:
       - pwd
       - apk --no-cache add bash coreutils gcc make musl-dev
       - pip --version
       - pip --disable-pip-version-check install --requirement=requirements.txt --root-user-action=ignore
       - adduser --disabled-password --uid=1000 user
-      - '[ ! -z "$CI_REPO_REMOTE" ] && chown --recursive user: .'
+      - '[[ $CI_REPO_REMOTE ]] && chown --recursive user: .'
       - su user -c 'python3 template.py'
       - su user -c 'python3 -m unittest discover --start-directory=test --verbose'
       - su user -c 'pylint --version'
