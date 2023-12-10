@@ -1,0 +1,15 @@
+.gitignore
+.editorconfig
+.env
+.prettierrc
+.pylintrc
+.style.yapf
+.mypy.ini
+requirements.txt
+template.py
+test/test_template.py
+Makefile
+.drone.yml
+python.webp
+.files.txt
+README.md
