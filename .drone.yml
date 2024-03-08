@@ -3,7 +3,7 @@ type: docker
 
 steps:
   - name: test
-    image: python:3.11.7-alpine
+    image: python:3.11.8-alpine
     commands:
       - pwd
       - apk --no-cache add bash coreutils gcc make musl-dev
