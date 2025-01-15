@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #--------------------------------------------- ghislain.bernard@gmail.com ---------------------------------------------#
 
 import unittest
