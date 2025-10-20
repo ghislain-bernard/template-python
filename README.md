@@ -4,7 +4,7 @@
 
 ### usage
 
-```console
+```bash
 $ python3 template.py
 template@0.0.1
 
